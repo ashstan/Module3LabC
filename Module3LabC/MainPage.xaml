@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Module3LabC"
+             x:Class="Module3LabC.MainPage">
+
+    <StackLayout>
+
+        <Label Text="True/False Quiz" FontSize="40" HorizontalOptions="Center" TextColor="Black"/>
+
+        <Label x:Name="questionText" FontSize="30" HorizontalOptions="Center" Margin="0,0,0,6"/>
+        <Label x:Name="instructionsText" FontSize="20" HorizontalOptions="Center" Margin="0,0,0,6" />
+
+        <local:SwipeContainer Swipe="OnSwiped" 
+         HorizontalOptions="Center">
+            <Image x:Name="theImage" Source="img1.jpg" Aspect="AspectFit"
+                       HeightRequest="{OnPlatform Android=200}"
+                       HorizontalOptions="Center" />
+
+        </local:SwipeContainer>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
